@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Top Green Bar -->
+      <nav class="nav">
+        <div class="first_nav">
+          <div class="call">
+            <i class="fa fa-phone"></i>
+            <a href="#">+91 123-456-7890</a>
+          </div>
+          <div class="offer">
+            <p>🔥 Get 50% Off on Selected Items | Shop Now</p>
+          </div>
+          <div class="dropdown">
+            <button>Language <i class="fa-solid fa-angle-down"></i></button>
+            <div class="dropdown-content">
+              <a href="#">English</a>
+              <a href="#">Urdu</a>
+              <a href="#">Hindi</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <div class="main_nav">
+          <div class="logo">
+            <img src="IMG/logoshop.png" alt="Logo" />
+            <span>ShopCart</span>
+          </div>
+
+          <div class="nav-items">
+            <ul>
+              <li><a href="#">Category</a></li>
+              <li><a href="#">Deals</a></li>
+              <li><a href="#">What's New</a></li>
+            </ul>
+          </div>
+
+          <div class="search-bar">
+            <input type="text" placeholder="Search Product..." />
+            <i class="fa fa-search"></i>
+          </div>
+
+          <div class="account">
+            <i class="fa-solid fa-user"></i>
+            <a href="#">Account</a>
+          </div>
+
+          <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <a href="#">Cart</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Slider First Page -->
+      <section class="pgslider">
+        <div class="slider">
+          <div class="content">
+            <h1>Shopping and department store.</h1>
+            <p>
+              Shopping is a bit of a relaxing hobby for me, which is sometimes
+              troubling for the bank balance.
+            </p>
+            <button>Shop Now</button>
+          </div>
+          <div class="box-img"></div>
+        </div>
+      </section>
+
+      <!-- Categories -->
+      <section class="categories">
+        <h2>Shop our top categories</h2>
+        <div class="category-container">
+          <div
+            class="category-card"
+            style="background-image: url('IMG/furniture.png')"
+          >
+            <div class="overlay">Furniture</div>
+          </div>
+          <div
+            class="category-card"
+            style="background-image: url('IMG/handbag.png')"
+          >
+            <div class="overlay">Hand Bag</div>
+          </div>
+          <div
+            class="category-card"
+            style="background-image: url('IMG/books.png')"
+          >
+            <div class="overlay">Books</div>
+          </div>
+          <div
+            class="category-card"
+            style="background-image: url('IMG/Tech.png')"
+          >
+            <div class="overlay">Tech</div>
+          </div>
+          <div
+            class="category-card"
+            style="background-image: url('IMG/sneaker.png')"
+          >
+            <div class="overlay">Sneakers</div>
+          </div>
+          <div
+            class="category-card"
+            style="background-image: url('IMG/travel.png')"
+          >
+            <div class="overlay">Travel</div>
+          </div>
+        </div>
+      </section>
+
+      <!--Today's Deal  -->
+      <section class="Today_deal">
+        <div class="gallery-container">
+          <h2>Today's Best Deals For You!</h2>
+
+          <div class="scroll-buttons">
+            <button id="scroll-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="scroll-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <div class="product-gallery">
+            <!-- Product 1 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="IMG/homepad.png" alt="Apple Watch Series 6" />
+                <i class="far fa-heart wishlist-icon"></i>
+              </div>
+              <div class="product-info">
+                <h3>HomePod Mini<span class="price">Rs. 12,999</span></h3>
+                <p>Smart speaker with rich sound and voice assistant.</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="cart-btn">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="IMG/instax.png" alt="Instax Mini 9" />
+                <i class="far fa-heart wishlist-icon"></i>
+              </div>
+              <div class="product-info">
+                <h3>Instax Mini 9 <span class="price">Rs. 5,500</span></h3>
+                <p>Selfie mode and selfie mirror, Macro mode</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="cart-btn">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="IMG/bags.png" alt="Base Camp Duffel M" />
+                <i class="far fa-heart wishlist-icon"></i>
+              </div>
+              <div class="product-info">
+                <h3>Women's Hand Bag <span class="price">Rs. 1,329</span></h3>
+                <p>Elegant and spacious handbag, perfect for daily use.</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="cart-btn">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="IMG/book.png" alt="Tote Medium" />
+                <i class="far fa-heart wishlist-icon"></i>
+              </div>
+              <div class="product-info">
+                <h3>
+                  Book (IT Interview Crack)<span class="price">Rs. 650</span>
+                </h3>
+                <p>Essential guide to mastering job interviews easily.</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="cart-btn">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="IMG/headphone.png" alt="HomePod Mini" />
+                <i class="far fa-heart wishlist-icon"></i>
+              </div>
+              <div class="product-info">
+                <h3>HomePod Mini <span class="price">Rs. 10,999</span></h3>
+                <p>Table with air purifier, stained veneer/black</p>
+                <div class="rating">⭐⭐⭐⭐⭐ <span>(121)</span></div>
+                <button class="cart-btn">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="IMG/watch.png" alt="Apple Watch Series 6" />
+                <i class="far fa-heart wishlist-icon"></i>
+              </div>
+              <div class="product-info">
+                <h3>One Plus Watch<span class="price">Rs. 15,239</span></h3>
+                <p>Stylish and durable watch, ideal for everyday wear.</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="cart-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Weekly Products  -->
+      <section class="most_selling">
+        <div class="gallery-container">
+          <h2>Most Selling Products</h2>
+
+          <div class="scroll-buttons">
+            <button id="scroll-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="scroll-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <div class="product-gallery">
+            <!-- Product 1 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="IMG/bottle.png" alt="Apple Watch Series 6" />
+                <i class="far fa-heart wishlist-icon"></i>
+              </div>
+              <div class="product-info">
+                <h3>
+                  Stainless Steel Bottle<span class="price">Rs. 402</span>
+                </h3>
+                <p>Durable, insulated bottle keeps drinks hot or cold.</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="cart-btn">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="IMG/travelbag.png" alt="Instax Mini 9" />
+                <i class="far fa-heart wishlist-icon"></i>
+              </div>
+              <div class="product-info">
+                <h3>Large Travel Bag<span class="price">Rs. 999</span></h3>
+                <p>Spacious and sturdy bag, perfect for long trips.</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="cart-btn">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="IMG/watch.png" alt="Apple Watch Series 6" />
+                <i class="far fa-heart wishlist-icon"></i>
+              </div>
+              <div class="product-info">
+                <h3>One Plus Watch<span class="price">Rs. 15,239</span></h3>
+                <p>Stylish and durable watch, ideal for everyday wear.</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="cart-btn">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="IMG/womenshoe.png" alt="Base Camp Duffel M" />
+                <i class="far fa-heart wishlist-icon"></i>
+              </div>
+              <div class="product-info">
+                <h3>Women's Shoes <span class="price">Rs. 3,290</span></h3>
+                <p>Lightweight, comfortable shoes for active lifestyles.</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="cart-btn">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="IMG/book.png" alt="Tote Medium" />
+                <i class="far fa-heart wishlist-icon"></i>
+              </div>
+              <div class="product-info">
+                <h3>
+                  Book (IT Interview Crack)<span class="price">Rs. 650</span>
+                </h3>
+                <p>Essential guide to mastering job interviews easily.</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="cart-btn">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="IMG/headphone.png" alt="HomePod Mini" />
+                <i class="far fa-heart wishlist-icon"></i>
+              </div>
+              <div class="product-info">
+                <h3>HomePod Mini <span class="price">Rs. 10,999</span></h3>
+                <p>Table with air purifier, stained veneer/black</p>
+                <div class="rating">⭐⭐⭐⭐⭐ <span>(121)</span></div>
+                <button class="cart-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trending Products for You -->
+      <section class="trending_product">
+        <div class="container">
+          <h2>Trending Products For You!</h2>
+          <div class="product-grid">
+              <div class="product-card">
+                  <img src="IMG/furniture_tr.png" alt="Furniture">
+                  <div class="product-info">
+                      <h3>Furniture Village</h3>
+                      <p>Delivery within 24 hours</p>
+                      <a href="#" class="shop-btn">Shop Now</a>
+                  </div>
+              </div>
+              <div class="product-card">
+                  <img src="IMG/fashin.png" alt="Fashion">
+                  <div class="product-info">
+                      <h3>Fashion World</h3>
+                      <p>Delivery within 24 hours</p>
+                      <a href="#" class="shop-btn">Shop Now</a>
+                  </div>
+              </div>
+          </div>
+      </div>      
+      </section>
+
+      <!-- Services  -->
+      <section class="Services">
+        <div class="container1">
+          <h2>Services To Help You Shop</h2>
+          <div class="services-grid">
+              <div class="service-card">
+                  <div class="content">
+                      <h3>Frequently Asked Questions</h3>
+                      <p>Updates on safe shopping in our stores</p>
+                  </div>
+                  <img src="IMG/faq.png" alt="FAQ">
+              </div>
+              <div class="service-card">
+                  <div class="content">
+                      <h3>Online Payment Process</h3>
+                      <p>Updates on safe shopping in our stores</p>
+                  </div>
+                  <img src="IMG/payment.png" alt="Payment">
+              </div>
+              <div class="service-card">
+                  <div class="content">
+                      <h3>Home Delivery Options</h3>
+                      <p>Updates on safe shopping in our stores</p>
+                  </div>
+                  <img src="IMG/delivery.png" alt="Delivery">
+              </div>
+          </div>
+      </div>      
+      </section>
+    </main>
+    <hr/>
+    <footer>
+      <!-- Footer -->
+      <div class="footer-container">
+        <div class="footer-column">
+          <img src="IMG/logoshop.png" alt="Logo" style="height:35%; width: 30%;" />
+            <h3>Shopcart</h3>
+            <p>Your One-Stop Shopping Destination for Everything You Need!</p>
+        </div>
+        <div class="footer-column">
+            <h3>Department</h3>
+            <a href="#">Fashion</a>
+            <a href="#">Education</a>
+            <a href="#">Books</a>
+            <a href="#">Furniture</a>
+        </div>
+        <div class="footer-column">
+            <h3>Services</h3>
+            <a href="#">Gift Card</a>
+            <a href="#">Shipping & Delivery</a>
+            <a href="#">Account Signup</a>
+        </div>
+        <div class="footer-column">
+            <h3>Help</h3>
+            <a href="#">Returns</a>
+            <a href="#">Track Orders</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+    
+    <div class="bottom-bar">
+        <div class="bottom-links">
+            <a href="#"><i class="fa-solid fa-gift"></i> Gift Cards</a>
+            <a href="#"><i class="fa-solid fa-circle-question"></i>Help Center</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <p>All Rights Reserved © 2024 | Designed by <b style="color: black;">Iqra Shaikh</b></p>
+    </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const gallery = document.querySelector(".product-gallery");
+        const scrollLeftBtn = document.getElementById("scroll-left");
+        const scrollRightBtn = document.getElementById("scroll-right");
+
+        scrollLeftBtn.addEventListener("click", () => {
+          gallery.scrollBy({ left: -300, behavior: "smooth" });
+        });
+
+        scrollRightBtn.addEventListener("click", () => {
+          gallery.scrollBy({ left: 300, behavior: "smooth" });
+        });
+      });
+    </script>
+  </body>
+</html>
